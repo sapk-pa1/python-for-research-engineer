@@ -63,3 +63,27 @@ rm -r -v -i <directory_to_delete>
 ``` 
 - -v will verbose what is being deleted 
 - -i can be used to do interactive delete
+
+
+# wildcards 
+## wc 
+wc gives us the lines words and letter are there in given file. 
+![img](resources/3.png)
+
+
+Also we can use the wildcard * to show all the text and their word counts 
+
+![img](resources/4.png)
+
+Here in the following figure the _ in between the * says that we want the files that can start with anything and somewhere have _ and then continue with other text 
+![img](resources/5.png)
+
+`wilcard can be used with the various other commands like mv , rm ...`
+# working through the Manual 
+```bash 
+man wc 
+``` 
+This will give us the manual for the wc command 
+# Passing Through Manual 
+If our screen is too small to display an entire manual page at once, the shell will use a paging program called less to show it piece by piece. We can use ↑ and ↓ to move line-by-line or Ctrl+Spacebar and Spacebar to skip up and down one page at a time. (B and F also work.) To search for a character or word, use / followed by the character or
+word to search for. If the search produces multiple hits, we can move between them using N (for “next”). To quit, press Q.
