@@ -10,10 +10,11 @@ def main(args):
                                            method='max')
     df['inverse_rank'] = 1 / df['rank']
     ax = df.plot.scatter(x='Count',
-                         y='inverse_rank',
+                         y='rank',
                          figsize=[12, 6],
                          grid=True,
-                         xlim=args.xlim)
+                         xlim=args.xlim,
+                         loglog=True)
     ax.figure.savefig(args.outfile)
 
 if __name__ == '__main__':
