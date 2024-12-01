@@ -87,3 +87,43 @@ This will give us the manual for the wc command
 # Passing Through Manual 
 If our screen is too small to display an entire manual page at once, the shell will use a paging program called less to show it piece by piece. We can use ↑ and ↓ to move line-by-line or Ctrl+Spacebar and Spacebar to skip up and down one page at a time. (B and F also work.) To search for a character or word, use / followed by the character or
 word to search for. If the search produces multiple hits, we can move between them using N (for “next”). To quit, press Q.
+
+
+
+# Exercises
+## Exploring ls flag 
+ls `-l` list the files that is present in the directory and addidng `-h` will list those files in the human readable file sizes. 
+![img](resources/6.png )
+
+### listing the files with the -t 
+```bash 
+    ls -t
+```
+Also we can use the -R flag to see the contents of the directories
+
+### `ls -F` Command in Linux
+
+The `ls -F` command in Linux appends **indicators** to file and directory names to provide more information about their types. This makes it easier to distinguish between different types of files in a directory listing.
+
+## Indicators Added by `ls -F`
+
+| Indicator | Meaning                       | Example       |
+|-----------|-------------------------------|---------------|
+| `/`       | Directory                     | `Documents/`  |
+| `*`       | Executable file               | `script.sh*`  |
+| `@`       | Symbolic link                 | `shortcut@`   |
+| `|`       | Named pipe (FIFO)             | `pipe|`       |
+| `=`       | Socket                        | `socket=`     |
+| `>`       | Door (specific to Solaris OS) | `door>`       |
+
+## Example Usage
+
+Running the `ls -F` command in a directory might display:
+
+```bash
+$ ls -F
+file.txt   script.sh*   Documents/   shortcut@   pipe|   socket=
+```
+
+
+# Keypoints 
